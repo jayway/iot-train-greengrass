@@ -1,0 +1,14 @@
+[Unit]
+Description=Greengrass service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/home/pi/greengrass/ggc/packages/1.3.0/greengrassd start
+Restart=always
+RestartSec=2
+PIDFile=/var/run/greengrassd.pid
+
+[Install]
+WantedBy=multi-user.target

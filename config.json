@@ -1,0 +1,16 @@
+{
+    "coreThing": {
+        "caPath": "root-ca.pem",
+        "certPath": "cloud.pem.crt",
+        "keyPath": "cloud.pem.key",
+        "thingArn": "arn:aws:iot:eu-central-1:554360467205:thing/LegoTrainGroup_Core",
+        "iotHost": "a1a7go85u2cfe6.iot.eu-central-1.amazonaws.com",
+        "ggHost": "greengrass.iot.eu-central-1.amazonaws.com"
+    },
+    "runtime": {
+        "cgroup": {
+            "useSystemd": "yes"
+        }
+    },
+    "managedRespawn": false
+}
